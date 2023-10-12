@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $('li a').on('click',function(e){
+        //     console.log(this.hash);
+        //       if( this.hash != ''){
+        //         e.preventDefault();
+        //         const hash = this.hash;
+        //         $('html,body').animate({
+        //             scrollTop: $(hash).offset().top
+        //         },1000);
+        //       }
+        // });
+        // });
+
+        // const scroll = new SmoothScroll('a[href*="#"]',{
+        //       speed:1000
+        // });
+       
+    </script>
+    <style>
+        html{
+            font-family: sans-serif;
+            /* scroll-behavior: smooth; */
+        }
+        .ex-layout{
+            display: flex;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+    .side-bar{
+        position: fixed;
+        height: 100vh;
+        width: 300px;
+        background-color: aquamarine;
+
+    }
+    section{
+        margin: 10px 10px;
+        scroll-snap-align: center;
+    }
+    ul li{
+        margin-bottom: 5px;
+    }
+    h1{
+       padding-bottom: 10px;
+    }
+    p{
+        text-align: justify;
+        font-size: 20px;
+    }
+    .container{
+        width: calc(100% - 300px);
+        margin-left: 300px;
+        background-color: aliceblue;
+    }
+</style>
+</head>
+<body>
+    <div class="ex-layout">
+        <div class="side-bar">
+            <ul>
+                <li><a href="#section1">Section1</a></li>
+                <li><a href="#section2">Section2</a></li>
+                <li><a href="#section3">Section3</a></li>
+                <li><a href="#section4">Section4</a></li>
+                <li><a href="#section5">Section5</a></li>
+                <li><a href="#section6">Section6</a></li>
+                <li><a href="#section7">Section7</a></li>
+                <li><a href="#section8">Section8</a></li>
+                <li><a href="#section9">Section9</a></li>
+                <li><a href="#section10">Section10</a></li>
+                <li><a href="#section11">Section11</a></li>
+                <li><a href="#section12">Section12</a></li>
+                <li><a href="#section13">Section13</a></li>
+            </ul>
+          
+        </div>
+        <div class="container">
+              <section id="section1">
+                    <h1>Section 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </section>
+              <section id="section2">
+                <h1>Section 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </section>
+           <section id="section3">
+            <h1>Section 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </section>
+          <section id="section4">
+            <h1>Section 4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+           </section>
+      <section id="section5">
+        <h1>Section 5</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+      </section>
+      <section id="section6">
+        <h1>Section 6</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+  </section>
+  <section id="section7">
+    <h1>Section 7</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+<section id="section8">
+    <h1>Section 8</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+<section id="section9">
+    <h1>Section 9</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+<section id="section10">
+    <h1>Section 10</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+<section id="section11">
+    <h1>Section 11</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+<section id="section12">
+    <h1>Section 12</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+<section id="section13">
+    <h1>Section 13</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</section>
+        </div>
+
+    </div>
+    
+</body>
+</html>
